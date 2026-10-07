@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    container_name: bulk-certificate-generator
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./generated_certificates:/app/generated_certificates
+      - ./generated_archives:/app/generated_archives
+      - ./certificates.db:/app/certificates.db

@@ -1,32 +1,46 @@
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
+*$py.class
 
 # Virtual environment
 venv/
 .venv/
+env/
 
-# Environment
+# Environment variables
 .env
+.env.*
 
-# Database
+# SQLite database
 *.db
 *.sqlite
 *.sqlite3
 
 # Generated certificates
-generated_certificates/*
-!generated_certificates/.gitkeep
+generated_certificates/
+generated_archives/
 
-# VS Code
-.vscode/
-
-# Testing
+# Pytest
 .pytest_cache/
+
+# Coverage
 .coverage
 htmlcov/
+.coverage.*
+
+# IDE
+.vscode/
+.idea/
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
